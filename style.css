@@ -1,0 +1,174 @@
+/* Add this CSS to your style.css file */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.tab {
+  display: flex;
+  flex-wrap: wrap; /* Allow tabs to wrap to the next line on smaller screens */
+  justify-content: center; /* Center align tabs */
+}
+
+.tab button {
+  flex: 1;
+  background-color: #f1f1f1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.tab button.active {
+  background-color: #000000;
+  color: white;
+}
+
+.tabcontent {
+  display: flex;
+  flex-wrap: wrap; /* Allow product cards to wrap to the next line on smaller screens */
+  justify-content: center; /* Center align and evenly distribute product cards */
+}
+
+.product-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: calc(50% - 20px);
+  max-width: 200px;
+  height: 300px;
+}
+
+.product-card img {
+  width: 200px;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.product-badge {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  padding: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.product-details h3 {
+  margin: 0;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-details .title-vendor {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.product-details .title-vendor h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.product-details .price-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.product-card {
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.product-card .details {
+  padding: 10px;
+}
+
+.product-card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.product-card .vendor {
+  color: #888;
+  font-size: 14px;
+}
+
+.product-card .price {
+  font-weight: bold;
+}
+
+.product-card .compare-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 14px;
+}
+
+.product-card .discount {
+  color: #ff0000;
+  font-size: 14px;
+}
+
+.product-card .button-container {
+  margin-top: auto;
+}
+
+.product-card button {
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 0 0 5px 5px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #3e3838;
+}
+
+@media only screen and (max-width: 767px) {
+  .tab button {
+    flex: 0 0 100%;
+    margin-bottom: 10px;
+  }
+
+  .product-card {
+    width: 200px;
+    max-width: none;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .container {
+    max-width: 900px;
+  }
+}

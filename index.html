@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <title>Coding Assesment L2 boilerplate</title>
+  </head>
+  <body>
+    <!-- Your code goes here -->
+    <div class="container">
+      <h1>SELECT YOUR CHOICE</h1>
+
+      <div class="tab">
+        <button
+          class="tablinks"
+          data-category="men"
+          onclick="openCategory(event, 'men')"
+        >
+          Men
+        </button>
+        <button
+          class="tablinks"
+          data-category="women"
+          onclick="openCategory(event, 'women')"
+        >
+          Women
+        </button>
+        <button
+          class="tablinks"
+          data-category="kids"
+          onclick="openCategory(event, 'kids')"
+        >
+          Kids
+        </button>
+      </div>
+
+      <div class="product-list">
+        <!-- Tab content -->
+        <div id="men" class="tabcontent"></div>
+        <div id="women" class="tabcontent"></div>
+        <div id="kids" class="tabcontent"></div>
+      </div>
+    </div>
+    <!-- Happy coding 😊 -->
+    <script src="./script.js"></script>
+  </body>
+</html>
