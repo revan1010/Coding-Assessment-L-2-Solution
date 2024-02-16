@@ -25,7 +25,7 @@ To get a copy of this project and run it on your local machine, follow these ste
 
 This project is hosted on GitHub Pages for easy access. You can view the live demo by visiting the following link:
 
-[Live Demo](https://your-username.github.io/your-repository/)
+[Live Demo]([https://your-username.github.io/your-repository/](https://revan1010.github.io/Coding-Assessment-L-2-Solution/))
 
 ## Features
 
