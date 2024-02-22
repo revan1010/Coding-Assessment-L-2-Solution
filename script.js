@@ -50,7 +50,7 @@ function fetchProductsAndDisplayDefaultCategory() {
           categoryContainer.insertAdjacentHTML("beforeend", productCard);
         });
       });
-      // Show initial category (Men) by default
+
       openCategory(
         {
           currentTarget: document.querySelector(
@@ -63,7 +63,7 @@ function fetchProductsAndDisplayDefaultCategory() {
     .catch((error) => console.error("Error fetching data:", error));
 }
 
-// Call the function to fetch products and display the default category
+
 fetchProductsAndDisplayDefaultCategory();
 
 function calculateDiscount(price, compareAtPrice) {
